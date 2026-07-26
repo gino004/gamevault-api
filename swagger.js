@@ -5,8 +5,8 @@ const doc = {
 		title: "GameVault API",
 		description: "API documentation for the GameVault project"
 	},
-	host: "localhost:8080",
-	schemes: ["http"]
+	host: "gamevault-api-81pi.onrender.com",
+	schemes: ["https"]
 };
 
 const outputFile = "./swagger.json";
