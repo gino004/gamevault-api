@@ -53,9 +53,13 @@ const createStudio = async (req, res) => {
 
 		const studio = {
 			name: req.body.name,
+			country: req.body.country,
 			foundedYear: req.body.foundedYear,
-			 headquarters: req.body.headquarters,
-			website: req.body.website
+			headquarters: req.body.headquarters,
+			employees: req.body.employees,
+			ceo: req.body.ceo,
+			website: req.body.website,
+			famousGame: req.body.famousGame
 		};
 
 		const response = await mongodb
@@ -91,9 +95,13 @@ const updateStudio = async (req, res) => {
 
 		const studio = {
 			name: req.body.name,
+			country: req.body.country,
 			foundedYear: req.body.foundedYear,
 			headquarters: req.body.headquarters,
-			website: req.body.website
+			employees: req.body.employees,
+			ceo: req.body.ceo,
+			website: req.body.website,
+			famousGame: req.body.famousGame
 		};
 
 		const response = await mongodb

@@ -28,9 +28,13 @@ const saveGame = (req, res, next) => {
 const saveStudio = (req, res, next) => {
 	const validationRule = {
 		name: "required|string",
+		country: "required|string",
 		foundedYear: "required|integer",
 		headquarters: "required|string",
-		website: "required|string"
+		employees: "required|integer",
+		ceo: "required|string",
+		website: "required|string",
+		famousGame: "required|string"
 	};
 
 	validator(req.body, validationRule, {}, (err, status) => {

@@ -21,6 +21,36 @@
         }
       }
     },
+    "/login": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/github/callback": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/logout": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
     "/games/": {
       "get": {
         "description": "",
@@ -76,6 +106,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "412": {
             "description": "Precondition Failed"
@@ -162,6 +195,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "401": {
+            "description": "Unauthorized"
+          },
           "404": {
             "description": "Not Found"
           },
@@ -189,6 +225,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "404": {
             "description": "Not Found"
@@ -226,13 +265,25 @@
                 "name": {
                   "example": "any"
                 },
+                "country": {
+                  "example": "any"
+                },
                 "foundedYear": {
                   "example": "any"
                 },
                 "headquarters": {
                   "example": "any"
                 },
+                "employees": {
+                  "example": "any"
+                },
+                "ceo": {
+                  "example": "any"
+                },
                 "website": {
+                  "example": "any"
+                },
+                "famousGame": {
                   "example": "any"
                 }
               }
@@ -242,6 +293,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "412": {
             "description": "Precondition Failed"
@@ -296,13 +350,25 @@
                 "name": {
                   "example": "any"
                 },
+                "country": {
+                  "example": "any"
+                },
                 "foundedYear": {
                   "example": "any"
                 },
                 "headquarters": {
                   "example": "any"
                 },
+                "employees": {
+                  "example": "any"
+                },
+                "ceo": {
+                  "example": "any"
+                },
                 "website": {
+                  "example": "any"
+                },
+                "famousGame": {
                   "example": "any"
                 }
               }
@@ -315,6 +381,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "404": {
             "description": "Not Found"
@@ -343,6 +412,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "404": {
             "description": "Not Found"
